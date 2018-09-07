@@ -44,13 +44,23 @@
     width: 100%;
 }
 
+.main-option {
+    font-family: 'Exo';
+    font-weight: 500;
+    font-size: 16px;
+    color: #282828;
+}
 
+.alt-text-color {
+    color: #ff6d6d;
+}
 
 
 /* header */
 
 .header {
     position: relative;
+    min-height: 200px;
 }
 
 /* контент сделать абсолют, а виде можно просто вставить как блок -> тогда ему задвать высоту  */
@@ -60,7 +70,7 @@
     top: 10%;
     left: 15%;
     right: 15%;
-    bottom: 15%;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,27 +88,214 @@
 .header-content__play {
     cursor: pointer;
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: #8286a3;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .header-content__play::after {
     content: '';
     position: absolute;
-    border: 8px solid transparent;
-    border-left: 8px solid #fff;
+    border: 12px solid transparent;
+    border-left: 12px solid #fff;
     left: calc(50% - 4px);
     top: calc(25%);
 }
 
+.header-content .button {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    padding: 18px 52px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #ff6d6d;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.35s;
+    letter-spacing: 0.2em;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ff6d6d;
+    transition: background-color 0.35s;
+}
+
+
+.note {
+    display: flex;
+    font-size: 14px;
+}
+
+.note__star {
+    vertical-align: baseline; 
+    position: relative; 
+    font-size: 70%;
+    top: -0.3em;
+    left: -0.3em;
+}
+
+
 .header__video {
   width: 100%;
+  height: 100%;
   /* height: 80vh; */
 }
 
-section {
-    height: 700px;
+/* new desigc */
+
+
+.section-content {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-content__title {
+    color: #ff6d6d;
+    letter-spacing: 0.2em;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.section-content__subtitle {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2em;
+}
+
+.section-content__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 1em;
+    letter-spacing: 0.04em;
+    color: rgba(40, 40, 40, 0.68);
+}
+
+.section-content__text:last-child {
+    margin-bottom: 0;
+}
+
+/* features */
+
+.content-group {
+    display: flex;
+}
+
+.content-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-group-item__icon {
+    height: 65px;
+    width: 65px;
+    margin-bottom: 1em;
+}
+
+.content-group-item__title {
+    font-size: 22px;
+    margin-bottom: 0.5em;
+}
+
+.content-group-item__text {
+    color: rgba(40, 40, 40, 0.68);
+    line-height: 26px;
+}
+
+/* client */
+
+
+.client-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.client-item__icon {
+    height: 76px;
+    width: 76px;
+    margin-bottom: 1em;
+}
+
+.client-item__title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.client-item__subtitle {
+    color: #ff6d6d;
+    margin-bottom: 1em;
+}
+
+.client-item__text {
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 26px;
+    font-size: inherit;
+}
+
+
+.client {
+    background-image: url(../../images/clients-bg.png);
+    background-size: contain;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .design__desktop, .responsive-design__desktop, .client__desktop {
+        display: none;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+
+    .main-option {
+        /* font-size: 1.1em; */
+    }
+
+    .header-content {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        right: 15%;
+        bottom: 0;
+        font-size: 1.1em;
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 9px 26px;
+    }
+
+    .header-content .button {
+        margin-bottom: 10px;
+    }
+
+    
+    .header-content__play {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .header-content__play::after {
+        border: 10px solid transparent;
+        border-left: 10px solid #fff;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+
 }
