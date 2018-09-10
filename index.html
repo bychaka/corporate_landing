@@ -30,7 +30,7 @@
         <div class="section-content">
             <h2 class="section-content__title">new design</h2>
             <p class="section-content__subtitle">There is no other platforms for you as like 
-                <span class="alt-text-color">....</span></p>
+                <span class="section-content_alt-text-color">....</span></p>
             <p class="section-content__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.</p>
             <p class="section-content__text">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
         </div>
@@ -66,7 +66,7 @@
         <div class="section-content">
             <h2 class="section-content__title">new design</h2>
             <p class="section-content__subtitle">Resposive design, just need your tap 
-                <span class="alt-text-color">....</span></p>
+                <span class="section-content_alt-text-color">....</span></p>
             <p class="section-content__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod semper.</p>
         </div>
     </section>
@@ -93,12 +93,12 @@
                 <p class="client-item__text">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
             </div>
         </div>
-        <div class="client__desktop">
-            <img src="images/client-1.png" alt="client logo">
-            <img src="images/client-2.png" alt="client logo">
-            <img src="images/client-3.png" alt="client logo">
-            <img src="images/client-4.png" alt="client logo">
-            <img src="images/client-5.png" alt="client logo">
+        <div class="client-desktop">
+            <img class="client-desktop__client-logo" src="images/client-1.png" alt="client logo">
+            <img class="client-desktop__client-logo" src="images/client-2.png" alt="client logo">
+            <img class="client-desktop__client-logo" src="images/client-3.png" alt="client logo">
+            <img class="client-desktop__client-logo" src="images/client-4.png" alt="client logo">
+            <img class="client-desktop__client-logo" src="images/client-5.png" alt="client logo">
         </div>
     </section>
         
@@ -113,14 +113,13 @@
     <section class="row sign-up">
         <div class="section-content">
             <h2 class="section-content__title">new features</h2>
-            <p class="section-content__subtitle">Over 1000 designers using 
-                <span class="alt-text-color">...</span></p>
+            <p class="section-content__subtitle">Over 1000 designers using ...</p>
         </div>
         <form action="#" class="sign-up-form">
-            <input class="sign-up-form__input-control" type="text" name="name" placeholder="full name">
-            <input class="sign-up-form__input-control" type="text" name="email" placeholder="your email">
-            <input class="sign-up-form__input-control" type="text" name="password" placeholder="password">
-            <input class="sign-up-form__input-control" type="submit" value="try now">
+            <input class="sign-up-form__input" type="text" name="name" placeholder="full name">
+            <input class="sign-up-form__input" type="text" name="email" placeholder="your email">
+            <input class="sign-up-form__input" type="text" name="password" placeholder="password">
+            <input class="sign-up-form__input" type="submit" value="try now">
         </form>
         <p class="sign-up-terms">
             By Signing up you agree to our 
@@ -130,15 +129,15 @@
     </section>
 
     <section class="row footer">
-        <div class="footer-block">
-            <div class="footer-block-title">Start <span class="footer-block-title__alt-color">EX</span></div>
-            <p class="footer-block-text">Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. 
+        <div class="footer-block address">
+            <div class="footer-block__title">Start <span class="footer-block__alt-text-color">EX</span></div>
+            <p class="footer-block__text">Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. 
                     USA &  CAN: 1-888-123-4567
                     Address: 34 Brokel Rd. NY</p>
         </div>
         
-        <div class="footer-block">
-            <div class="footer-block-title">Support</div>
+        <div class="footer-block support">
+            <div class="footer-block__title">Support</div>
             <div class="footer-block-list">
                 <a href="#" class="footer-block-list__item">help center</a>
                 <a href="#" class="footer-block-list__item">get started</a>
@@ -146,8 +145,8 @@
             </div>
         </div>
 
-        <div class="footer-block">
-            <div class="footer-block-title">about us</div>
+        <div class="footer-block about">
+            <div class="footer-block__title">about us</div>
             <div class="footer-block-list">
                 <a href="#" class="footer-block-list__item">about us</a>
                 <a href="#" class="footer-block-list__item">terms of use</a>
@@ -155,17 +154,17 @@
             </div>
         </div>
 
-        <div class="footer-block">
-            <div class="footer-block-title">get newsletter</div>
+        <div class="footer-block newsletter">
+            <div class="footer-block__title">get newsletter</div>
             <form action="#" class="form-newsletter">
-                <input type="text" name="email" placeholder="email">
-                <input type="submit" value="">
+                <input type="text" name="email" placeholder="email" class="form-newsletter__input">
+                <input type="submit" value="" class="form-newsletter__button">
             </form>
             <div class="footer-block-social">
-                <a href="#" class="footer-block-social-item"><i class="fa fa-dribble"></i></a>
-                <a href="#" class="footer-block-social-item"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="footer-block-social-item"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="footer-block-social-item"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="footer-block-social__item"><i class="fa fa-dribble"></i></a>
+                <a href="#" class="footer-block-social__item"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="footer-block-social__item"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="footer-block-social__item"><i class="fa fa-twitter"></i></a>
             </div>
         </div>
 
