@@ -360,23 +360,82 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    width: 263px;
 }
 
 .form-newsletter__input {
     border: 1px solid rgb(78, 78, 94);
     border-radius: 3px;
     background-color: rgba(141, 141, 141, 0.2);
-    opacity: 0.4;     
+    opacity: 0.4;   
+    width: 100%;
+    height: 49px;
+    font-size: 16px;
+    padding: 17px 55px 17px 28px;
+    box-sizing: border-box;
+}
+
+.form-newsletter__input::-webkit-input-placeholder {
+    text-transform: uppercase;
 }
 
 .form-newsletter__button {
     background-color: #ff6d6d;
     border-radius: 3px;
     border: none;
-
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 0;
+    width: 52px;
+    background-image: url(../pic/subscribe-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 3px 0px 0px rgba(14,15,15,0.15);
+    cursor: pointer;
+}
+
+.footer-block-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 17px;
+}
+
+.footer-block-social__item {
+    display: block;
+    height: 22px;
+    width: 22px;
+    text-decoration: none;
+    color: #cbcbcb;
+    margin: 0 9px;
+}
+
+.icon-dribbble {
+    /* border-radius: 50%;
+    color: #fff;
+    background-color: #cbcbcb; */
+}
+
+.dribbble, .facebook, .gplus, .twitter {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dribbble {
+    background-image: url(../pic/dribble.png);
+}
+
+.facebook {
+    background-image: url(../pic/facebook.png);
+}
+
+.gplus {
+    background-image: url(../pic/gplus.png);
+}
+
+.twitter {
+    background-image: url(../pic/twitter.png);
 }
 
 .address {
@@ -392,8 +451,8 @@
 }
 
 @media (max-width: 1200px) {
-    .design__desktop, .responsive-design__desktop, .client__desktop {
-        /* display: none; */
+    .design__desktop, .responsive-design__desktop, .client-desktop {
+        display: none;
     }
 }
   
@@ -401,6 +460,14 @@
 
     .main-option {
         /* font-size: 1.1em; */
+    }
+
+    .content-group, .footer, .sign-up-form {
+        flex-direction: column;
+    }
+
+    .sign-up-form__input {
+        width: 100%;
     }
 
     .header-content {
