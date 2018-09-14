@@ -470,7 +470,7 @@
 
 
 /* media for 320-600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .main-option {
         /* font-size: 1.1em; */
@@ -507,11 +507,6 @@
         height: 40px;
         width: 40px;
         margin-bottom: 10px;
-    }
-
-    .header-content__play::after {
-        border: 10px solid transparent;
-        border-left: 10px solid #fff;
     }
 
     .note {
@@ -602,4 +597,109 @@
         display: none;
     }
 
+}
+
+/* media for 600-1024 */
+@media screen and (min-width: 701px) and (max-width: 1099px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .header-content__title {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .header-content__play {
+        margin-bottom: 50px;
+    }
+
+    .section-content {
+        padding: 40px 140px;
+    }
+
+    .section-content__subtitle, .section-content__title {
+        text-align: center;
+    }
+
+    .section-content__title {
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+
+    .features .section-content {
+        padding: 40px 15px;
+    }
+
+    .content-group-item__title, .client-item__title {
+        font-size: 19px;
+        margin-bottom: 1em;
+    }
+
+    .content-group-item__text, .client-item__text {
+        font-size: 14px;
+    }
+
+    .client {
+        padding: 80px 15px;
+        justify-content: space-between;
+    }
+
+    .client-item {
+        width: 32%;
+    }
+
+
+
+    /* ################## */
+
+
+    .sign-up .section-content {
+        padding: 40px 15px;
+    }
+
+    .sign-up .section-content .section-content__title {
+        margin: 0;
+    }
+
+    .sign-up-form {
+        flex-direction: column;
+        padding: 0 140px;
+        box-sizing: border-box;
+    }
+
+    .sign-up-form__input {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    /* footer ################## */
+
+    .footer {
+        flex-basis: 4;
+        flex-wrap: wrap;
+        padding: 90px 140px;
+    }
+
+    .footer-block {
+        margin-bottom: 1.5em;
+        box-sizing: border-box;
+    }
+
+    .footer-block:last-child {
+        margin: 0;
+    }
+
+    .address {
+        min-width: 100%;
+    }
+
+    .support, .about {
+        text-align: center;
+    }
+
+    .form-newsletter {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
 }
