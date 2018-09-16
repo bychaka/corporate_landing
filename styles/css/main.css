@@ -599,7 +599,7 @@
 
 }
 
-/* media for 600-1024 */
+/* media for 700-1024 */
 @media screen and (min-width: 701px) and (max-width: 1099px) {
     .header {
         margin-bottom: 50px;
@@ -631,6 +631,21 @@
         padding: 40px 15px;
     }
 
+    .responsive-design .section-content {
+        padding: 50px 95px 0 95px;
+        margin: 0 auto;
+        width: 630px;
+        height: 397px;
+        background-image: url(../pic/macbook.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+    .responsive-design .section-content .section-content__title {
+        line-height: 1.2em;
+    }
+
     .content-group-item__title, .client-item__title {
         font-size: 19px;
         margin-bottom: 1em;
@@ -642,6 +657,10 @@
 
     .client {
         padding: 80px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .client .content-group {
         justify-content: space-between;
     }
 
@@ -649,7 +668,21 @@
         width: 32%;
     }
 
+    .new-features .section-content {
+        padding: 70px 95px 0 95px;
+        margin: 0 auto;
+        max-width: 810px;
+        height: 375px;
+        background-image: url(../pic/new-features.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-sizing: border-box;
 
+    }
+
+    .new-features .section-content .section-content__title {
+        line-height: 1.2em;
+    }
 
     /* ################## */
 
@@ -695,6 +728,7 @@
     }
 
     .support, .about {
+        min-width: 50%;
         text-align: center;
     }
 
