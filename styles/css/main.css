@@ -327,6 +327,11 @@
     box-sizing: border-box;
 }
 
+.footer-desktop {
+    display: flex;
+    flex-direction: row;
+}
+
 .footer-block {
     display: flex;
     flex-direction: column;
@@ -711,7 +716,8 @@
 
     /* footer ################## */
 
-    .footer {
+    .footer-desktop {
+        display: flex;
         flex-basis: 4;
         flex-wrap: wrap;
         padding: 90px 140px;
@@ -743,7 +749,7 @@
 
 
 /* media for pc > 1100px */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1099px) {
     .header-content {
         padding-top: 100px;
     }
@@ -758,28 +764,54 @@
     }
 
     .design {
-        padding: 183px 0 165px 0;
-    }
-
-    .section-group {
-        margin: 0 auto;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        max-width: 1170px;
+    }
+
+    .design-group {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 183px 70px 165px 0;
+        width: 60%;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    .design-group-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        background-color: #ececec;
+    }
+
+    .design-group-desktop__top {
+        min-height: 32%;
+        background-color: #ececec;
+    }
+
+    .design-group-desktop__bot {
+        min-height: 68%;
+        background-color: #ececec;
+        background-image: linear-gradient(to bottom right, #ECECEC 50%, #FB8686 50%);
     }
 
     .design .section-content {
-        max-width: 585px;      
+        width: 585px;
     }
 
-    .features {
-        padding: 132px 0 172px 0;
+    .design .section-content .section-content__title {
+        margin-bottom: 55px;
     }
 
     .features .section-content {
+        padding: 132px 0 172px 0;
         margin: 0 auto;
         max-width: 1170px;
         align-items: center;
+        background: url(../pic/pen-bg.png) 0 -20px no-repeat,
+                    url(../pic/Earphones-bg.png) 100% -15px no-repeat,
+                    url(../pic/cup-bg.png) 60% 100% no-repeat;
     }
 
     .features .section-content .section-content__title {
@@ -795,12 +827,11 @@
     .responsive-design {
         display: flex;
         height: 550px;
-        padding-top: 100px;
     }
 
     .responsive-design .section-content {
         max-width: 570px;
-        padding: 40px 0 0 15px;
+        padding: 140px 0 0 15px;
     }
 
     .responsive-design .section-content .section-content__title {
@@ -811,12 +842,19 @@
         padding-right: 60px;
     }
 
-    .responsive-design__desktop {
+    .responsive-design-desktop {
         min-width: 50%;
         display: block;
-        background-image: url(../pic/macbook.png);
+        background: linear-gradient(50deg, #ff8a8a 0%, #ff8a8a 51%, #ececec 51%, #ececec 100%);
+    }
+
+    .responsive-design-desktop__image {
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        background-image: url(../pic/macbook.png);        
         background-repeat: no-repeat;
-        background-position: 50% 0;
+        background-position: 50% 100px;
     }
 
     /* client */
@@ -874,10 +912,30 @@
         box-sizing: border-box;
         justify-content: space-between;
         padding: 0 15px;
+        position: relative;
     }
 
     .sign-up-form__input {
         margin: 0;
+    }
+
+    .sign-up-form::before {
+        display: block;
+        height: 56px;
+        width: 228px;
+        content: '30 days free trial for all.';
+        color: #f6f5f3;
+        font-size: 16px;
+        position: absolute;
+        top: -56px;
+        right: 15px;
+        background-image: url(../pic/arrow.png);
+        background-position: 0 7px;
+        background-repeat: no-repeat;
+    }
+
+    .footer {
+        background: linear-gradient(45deg, #fff 0%, #fff 80%, #ff8a8a 80%, #ff8a8a 100%);
     }
 
     .footer-desktop {
