@@ -63,8 +63,6 @@
     min-height: 200px;
 }
 
-/* контент сделать абсолют, а виде можно просто вставить как блок -> тогда ему задвать высоту  */
-
 .header-content {
     position: absolute;
     top: 10%;
@@ -140,7 +138,6 @@
 .header__video {
   width: 100%;
   height: 100%;
-  /* height: 80vh; */
 }
 
 /* new design */
@@ -480,10 +477,6 @@
 /* media for 320-600px */
 @media screen and (max-width: 700px) {
 
-    .main-option {
-        /* font-size: 1.1em; */
-    }
-
     .content-group, .footer, .sign-up-form {
         flex-direction: column;
     }
@@ -554,10 +547,6 @@
 
     .content-group-item:last-child, .client-item:last-child {
         margin-bottom: 0;
-    }
-
-    .responsive-design .section-content .section-content__title {
-        /* font-size: 20px; */
     }
 
     .client .content-group {
@@ -692,9 +681,6 @@
         line-height: 1.2em;
     }
 
-    /* ################## */
-
-
     .sign-up .section-content {
         padding: 40px 15px;
     }
@@ -746,7 +732,6 @@
         margin-bottom: 10px;
     }
 }
-
 
 /* media for pc > 1100px */
 @media screen and (min-width: 1099px) {
